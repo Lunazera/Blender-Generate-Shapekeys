@@ -1,0 +1,15 @@
+schema_version = "1.0.0"
+
+id = "LZ_Generate_ARKit_Shapekeys"
+version = "1.0.0"
+name = "Generate ARKit Shapekeys"
+tagline = "Generate blank shapekeys for the 52 ARKit blendshapes on your mesh"
+maintainer = "lunazera"
+type = "add-on"
+website = "https://github.com/Lunazera/"
+
+blender_version_min = "3.0.0"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
