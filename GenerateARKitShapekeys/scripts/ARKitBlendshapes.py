@@ -1,5 +1,6 @@
 def Get_ARkit():
-    blendshapes= ['BrowDownLef',
+    blendshapes= ['Basis',
+    'BrowDownLef',
     'BrowDownRight',
     'BrowInnerUp',
     'BrowOuterUpLeft',

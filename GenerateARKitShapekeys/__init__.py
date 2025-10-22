@@ -1,6 +1,6 @@
 bl_info = {
-    "name": "Generate ARKit Shapekeys",
-    "description": "Quickly generate blank shapekeys on your mesh",
+    "name": "Generate Shape Keys",
+    "description": "Quickly generate blank ARKit shape keys on your mesh",
     "author": "lunazera",
     "version": (0, 1),
     "blender": (3, 0, 0),

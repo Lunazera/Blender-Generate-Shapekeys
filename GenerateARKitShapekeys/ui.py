@@ -29,7 +29,7 @@ from bpy.types import (Panel,
 class GENSHAPES_PG_SceneProperties(PropertyGroup):
     name_mesh: StringProperty(
         name="Mesh",
-        description="Name of your main mesh to add blendshapes from",
+        description="Name of your main mesh to add blendshapes to",
         default="",
         maxlen=1024,
         )
@@ -37,9 +37,9 @@ class GENSHAPES_PG_SceneProperties(PropertyGroup):
 # ------------------------------------------------------------------------
 #    Operators
 # ------------------------------------------------------------------------
-class WM_OT_Generate(Operator):
-    bl_label = "Generate Shapekeys"
-    bl_idname = "wm.generate" 
+class WM_OT_LZTools_GenerateShapekeys(Operator):
+    bl_label = "Generate ARKit Shape Keys"
+    bl_idname = "wm.lzgeneratearkit" 
 
     def execute(self, context):
         scene = context.scene
@@ -61,7 +61,7 @@ class WM_OT_Generate(Operator):
 #    Panel in Object Mode
 # ------------------------------------------------------------------------
 class OBJECT_PT_GENSHAPES(Panel):
-    bl_label = "Generate ARKit Shapekeys"
+    bl_label = "Generate Mesh Shape Keys"
     bl_idname = "OBJECT_PT_LZTools_GenerateShapekeys"
     bl_space_type = "VIEW_3D"   
     bl_region_type = "UI"
@@ -84,13 +84,13 @@ class OBJECT_PT_GENSHAPES(Panel):
         layout.prop(genshapes_tool, "name_mesh")
         
         layout.separator(factor=3)
-        layout.operator("wm.generate")
+        layout.operator("wm.lzgeneratearkit")
         layout.separator()
 
 ##################################
 
 classes = (
-    WM_OT_Generate,
+    WM_OT_LZTools_GenerateShapekeys,
     GENSHAPES_PG_SceneProperties,
     OBJECT_PT_GENSHAPES
 )
