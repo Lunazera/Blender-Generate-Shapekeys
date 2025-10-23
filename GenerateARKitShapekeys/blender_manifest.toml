@@ -1,7 +1,7 @@
 schema_version = "1.0.0"
 
 id = "LZ_Generate_Shapekeys"
-version = "1.0.0"
+version = "1.0.1"
 name = "Generate Shape Keys"
 tagline = "Generate blank shapekeys for the 52 ARKit blendshapes on your mesh"
 maintainer = "lunazera"
